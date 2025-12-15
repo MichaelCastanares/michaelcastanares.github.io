@@ -4,15 +4,12 @@
 
 ### About Me
 
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Nowcasting Philippine Household Consumption: An Alternative
+Approach using Google Trends and XGBoost Model](/sample_page)
+<img src="images/Paper_XGBoost.gif?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-[Project 3 Title](http://example.com/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
