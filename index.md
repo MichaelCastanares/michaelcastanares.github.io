@@ -2,7 +2,7 @@
 
 ---
 
-### Research Initiatives: Use of alternative datasets to nowcast the Philippine econonmy
+### Research Initiatives: Use of alternative datasets to nowcast the Philippine economy
 
 [Nowcasting Philippine Household Consumption: An Alternative
 Approach using Google Trends and XGBoost Model](/sample_page)
