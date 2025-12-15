@@ -1,11 +1,9 @@
 title: Michael Lawrence Castanares # your name (or website title) here
 logo: "/images/logo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
+  A Data Scientist with multidisciplinary background and experience in the central bank. My interest is to lead research to support data-driven policy formulation. With a strong track record of research initiatives developing innovative AI and machine-learning based forecasting models that support macro-economic surveillance and operations of the research department. Leveraging a rigorous PhD and Data Science training, I possess a unique ability to apply scientific rigor to academic, operational, and business problems. 
   <br><br>
-  Second description 
-  <br><br>
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
+  <a href="https://linkedin.com/in/mlgcastanares">View My LinkedIn Profile</a> 
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
