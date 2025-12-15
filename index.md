@@ -12,8 +12,10 @@ Approach using Google Trends and XGBoost Model](/sample_page)
 <img src="images/Paper_XGBoost.gif?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[A Machine Learning Approach to Constructing A Weekly GDP Tracker using Google Trends](/pdf/sample_presentation.pdf)
+
+**Abstract.** High frequency and granular data are integral in crafting prompt and appropriate measures toward mitigating impact of economic headwinds. We construct a near real-time Gross Domestic Product (GDP) growth tracker that capitalizes on available high frequency alternative data and state-of-the-art machine learning models. The tracker serves as a complementary surveillance tool for monitoring economic activity.
+<!-- <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
 
@@ -26,7 +28,7 @@ Approach using Google Trends and XGBoost Model](/sample_page)
 ---
 
 ### Blog
-
+->
 
 
 
