@@ -3,6 +3,10 @@ layout: default
 title: Portfolio
 ---
 
+[Home](/) | [Blog](/blog) | [Projects](/projects)
+
+---
+
 ## Portfolio
 
 ---
