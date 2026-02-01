@@ -72,6 +72,7 @@ real-time and granular information that official statistics cannot match, yet th
 
 As economic activity leaves an ever-larger digital footprint, I think GT data will remain part of the nowcasting toolkit. The challenge for researchers is balancing technical rigor with economic intuition—knowing when these alternative indicators track the economy, and when they merely reflect noise.
 
+[View Code Repository on GitHub](https://github.com/michaelcastanares/GoogleTrends)
 
 Disclaimer of AI use: Claude Sonnet was used to improve the flow of the discussion.
 
