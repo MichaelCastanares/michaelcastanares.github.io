@@ -72,7 +72,7 @@ real-time and granular information that official statistics cannot match, yet th
 
 As economic activity leaves an ever-larger digital footprint, I think GT data will remain part of the nowcasting toolkit. The challenge for researchers is balancing technical rigor with economic intuition—knowing when these alternative indicators track the economy, and when they merely reflect noise.
 
-<small>
+<p style="font-size:9px">
 
 Disclaimer of AI use: Claude Sonnet was used to improve the flow of the discussion.
 
@@ -90,6 +90,6 @@ Woloszko, N. (2020), “Tracking activity in real time with Google Trends”, OE
 
 RREPI data. https://www.bsp.gov.ph/Media_And_Research/Media%20Releases/2025_09/news-09262025c1.aspx
 
-</small>
+</p>
 
 ----
