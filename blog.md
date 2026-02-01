@@ -75,7 +75,6 @@ As economic activity leaves an ever-larger digital footprint, I think GT data wi
 
 Disclaimer of AI use: Claude Sonnet was used to improve the flow of the discussion.
 
-<div style="font-size: 0.85em; color: #666;">
 
 References:
 
@@ -91,6 +90,5 @@ Woloszko, N. (2020), “Tracking activity in real time with Google Trends”, OE
 
 RREPI data. https://www.bsp.gov.ph/Media_And_Research/Media%20Releases/2025_09/news-09262025c1.aspx
 
-</div>
 
 ----
