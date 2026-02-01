@@ -7,7 +7,7 @@ title: Blog
 
 ---
 
-### Challenges on the use of Google Trends for research
+### "Challenges on the use of Google Trends for research"
 *Updated: 1 February 2026*
 
 Internet search volumes (Google Trends) have become popular proxies for estimating current period (also referred to as "nowcasting") macroeconomic indicators. In my work on machine learning models, I've seen firsthand how these high-frequency indicators (GT variables) can circumvent the publication lags of official statistics.
