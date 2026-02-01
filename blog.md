@@ -3,6 +3,10 @@ layout: default
 title: Blog
 ---
 
+[Home](/) | [Blog](/blog) | [Projects](/projects)
+
+---
+
 ### Challenges on the use of Google Trends for research
 *Updated: 1 February 2026*
 
