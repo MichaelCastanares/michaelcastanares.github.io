@@ -32,8 +32,6 @@ The time-series is the "number of nights stayed" by Australian resident in a par
 
 <img src="images/Blog_TSFEATURES_2.png?raw=true"/>
 
-
-
 **Trend.** Trend describes the general long-term movement of the time series whether its increasing, decreasing, or no change. As human, we also tend to think (or follow a straight path). We should be weary that when seeing an increasing series follow several paths (in the time steps): linearly increase, exponentially increase, exponential decrease, or remains the same.
 
 *Insights:* A simple way to extract a trend in the series is to take a moving average (MA). MA smoothens out the series removing high frequency changes. One can control the smoothness using the window size - larger window size results to a more smoother series revealing long-term trend.
@@ -44,11 +42,9 @@ In `tsfeatures`, we can calculate the strength of trend and seasonality. The mat
 
 **Auto-correlation.** It's akin to "memory of the time series" - to what extent do past (or lagged) values are linearly related to the present values. Consider the simple example (an AR1 relation)
 
-$$y_t = \alpha y_{t-1} + \varepsilon$$
+<img src="images/Blog_TSFEATURES_eq2.png?raw=true"/>
 
-Where $\alpha$ (the AR1 coefficient) captures the influence of the previous time step.
-
-This is common but powerful relation which says that the present value is determined by a factor $\alpha$ of the recent past value ,$y_{t-1}$, and some noise, $\eta$. The AR1 coefficient, $\alpha$ can be estimated using an auto-correlation function (taking lag = 1)
+This is common but powerful relation which says that the present value is determined by a factor $\alpha$ of the recent past value, $y_{t-1}$, and some noise, $\eta$. The AR1 coefficient, $\alpha$ can be estimated using an auto-correlation function (taking lag = 1)
 
 *Insights:* In my work, I found that AR1 is typically a good baseline model that is hard to beat. It is elegant, powerful, and easy to explain. 
 
