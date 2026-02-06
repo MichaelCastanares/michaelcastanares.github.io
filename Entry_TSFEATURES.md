@@ -1,6 +1,14 @@
-"Useful metrics to kickstart your analysis on time-series"
-(in progress)
+---
+layout: default
+title: Blog
+---
 
+[Home](/) | [Blog](/blog) | [Projects](/projects)
+
+---
+
+### "Useful metrics to kickstart your analysis on time-series"
+*Updated: 6 February 2026*
 
 # Intro:
 Time series data tells compelling stories about the past and hints at the future. Will housing prices in Australia continue rising? When does Australia see peak tourist arrivals? Understanding these patterns is vital for policy-making and business strategy.
@@ -8,6 +16,8 @@ Time series data tells compelling stories about the past and hints at the future
 While time series analysis can seem daunting, specialized tools like Python's `tsfeatures` package make it accessible. In this post, I'll share practical metrics for characterizing time series—tools I've used in my work and MSDS studies to as pre-cursor analysis towards building time-series models.
 
 Before diving in, test your intuition with the figure below. What patterns do you notice? What research questions emerge?
+
+<img src="images/Blog_TSFEATURES_1.png?raw=true"/>
 
 The time-series is the "number of nights stayed" by Australian resident in a particular state. The data is sourced from the National Visitor Survey (Tourism Research Australia)
 
@@ -26,6 +36,9 @@ Where:
 
 - insights: Seasonal and cyclic patterns in the series are straight forward to model due to their regularity. Take the tourism data of Tasmania. Plotting the seasonal plot (stacking the time-series per year) shows that most tourist visits happen during January (Summer). Meanwhile, September (start of spring) show the least volume of tourist visits - suitable for those who want to avoid the crowd.
 
+<img src="images/Blog_TSFEATURES_2.png?raw=true"/>
+
+
 
 **Trend**. Trend describes the general long-term movement of the time series whether its increasing, decreasing, or no change. As human, we also tend to think (or follow a straight path). We should be weary that when seeing an increasing series follow several paths (in the time steps): linearly increase, exponentially increase, exponential decrease, or remains the same.
 
@@ -33,6 +46,7 @@ Where:
 
 In `tsfeatures`, we can calculate the strength of trend and seasonality. The mathematical definitions of the metrics is descrived in Hyndman's book (https://otexts.com/fpp2/seasonal-strength.html). A parametric plot of the strength of trend and seasonality can be a straightforward analysis to assess several time series.
 
+<img src="images/Blog_TSFEATURES_3.png?raw=true"/>
 
 **Auto-correlation**. It's akin to "memory of the time series" - to what extent do past (or lagged) values are linearly related to the present values. Consider the simple example (an AR1 relation)
 
@@ -44,10 +58,12 @@ This is common but powerful relation which says that the present value is determ
 
 - insights: In my work, I found that AR1 is typically a good baseline model that is hard to beat. It is elegant, powerful, and easy to explain. 
 
+
 **Stationarity**. A series is stationary when its statistical properties (mean, variance) don't change over time. Most (linear) forecasting/statistical models assume/requires that the series is stationary. Statistical test for stationarity are Augmented Dickey-Fuller test and KPSS test.
 
 - insights: Real-world time series are typically non-stationary. Preprocessing steps—such as taking first differences or computing annual growth rates—are often necessary before applying statistical models. Interestingly, complex machine learning models (e.g., Neural Networks, XGBoost) can handle non-stationary data directly.
 
+<img src="images/Blog_TSFEATURES_4.png?raw=true"/>
 
 The figure illustrates an iterative 3-step process: transform series, compute statistic, and explore. For Australian Housing prices, we calculate annual growth rates and apply ADF/KPSS tests for stationarity. Results show NSW and Victoria are stationary, while Queensland and ACT require additional transformations before linear modeling.
 
@@ -57,6 +73,8 @@ The figure illustrates an iterative 3-step process: transform series, compute st
 
 **Sample analysis**
 Applying these tools to Queensland's tourism data reveals: a strong upward trend (trend strength = 0.82, visible in the 8-quarter moving average) and moderate seasonality (seasonal strength = 0.59). The series appears non-stationary visually and shows modest lag-1 autocorrelation (x_acf1 = 0.543)
+
+<img src="images/Blog_TSFEATURES_5.png?raw=true"/>
 
 **Final thoughts**
 Understanding time series characteristics before modeling is essential. The metrics discussed here (decomposition, seasonality, trend, autocorrelation, stationarity, and entropy) provide a framework to kickstart the analysis. Researchers can capitalize python tools such as tsfeatures for their Exploratory Data Analysis. 
