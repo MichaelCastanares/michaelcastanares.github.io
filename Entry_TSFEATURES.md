@@ -24,13 +24,7 @@ The time-series is the "number of nights stayed" by Australian resident in a par
 
 **Decomposition.** A time-series can be decomposed into three components: Trend, Seasonal/Cyclic, and Innovations/Noise. The decomposition can either be linear or multiplicative. A linear decomposition can be written as
 
-$$Y\_t = T\_t + S\_t + \varepsilon\_t$$
-
-Where:
-- $T\_t$ = Trend
-- $S\_t$ = Seasonal/Cyclic component  
-- $\varepsilon\_t$ = noise/innovation
-
+<img src="images/Blog_TSFEATURES_eq1.png?raw=true"/>
 
 **Seasonality, and Cyclicity.** A time series is seasonal when it exhibits a regular, fixed pattern that aligns with the calendar (e.g., quarterly, annual) or weather  (e.g., summer, winter). Meanwhile, cyclic series exhibits patterns that follows other than calendar dates or season (e.g., business cycles, market cycles in Economics).
 
