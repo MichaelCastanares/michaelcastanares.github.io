@@ -80,7 +80,7 @@ Applying these tools to Queensland's tourism data reveals: a strong upward trend
 Understanding time series characteristics before modeling is essential. The metrics discussed here (decomposition, seasonality, trend, autocorrelation, stationarity, and entropy) provide a framework to kickstart the analysis. Researchers can capitalize python tools such as tsfeatures for their Exploratory Data Analysis. 
 
 
-Codes used to generate the figures may be found here: [View Code Repository on GitHub](https://github.com/MichaelCastanares/Github/tree/f69d5a97156678120379d8c40b728951e5d25432/GoogleTrends)
+Codes used to generate the figures may be found here: [View Code Repository on GitHub](https://github.com/MichaelCastanares/Github/tree/main/TS_Metrics)
 
 Disclaimer of AI use: Claude Sonnet was used to improve the flow of the discussion.
 
