@@ -25,11 +25,11 @@ There are mainly two models for decomposition:
 
 #### Additive model. The sum of the components constitute the signal
 
-<img src="images/Blog_STL_eq1.png?raw=true" height="50"/>
+<img src="images/Blog_STL_eq1.png?raw=true" height="100"/>
 
 #### Multiplicative model. The components are multiplied together to form the signal. Multiplicative model is appropriate when the seasonal pattern/variations increases with the level of the time series.
 
-<img src="images/Blog_STL_eq2.png?raw=true" height="50"/>
+<img src="images/Blog_STL_eq2.png?raw=true" height="100"/>
 
 insight: A multiplicative model can be reduced to a linear model by applying a log transform. It is important to check the unit of measures are consistent when transforming datasets to different spaces (linear, log-spaces). In my experience, these data transforms are intermediate steps. Stakeholders would still require that the results be expressed in their original units.
 
