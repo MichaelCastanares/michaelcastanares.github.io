@@ -35,12 +35,9 @@ insight: A multiplicative model can be reduced to a linear model by applying a l
 
 <img src="images/Blog_STL_eq3.png?raw=true"/>
 
-
-
 **Data**. Lets take the Australian Export volume of Liquified Natural Gas (LNG), `AU_LNG` series, in Megaliter as an example (see photo below).
 
 <img src="images/Blog_STL_1_gas_exports.png?raw=true"/>
-
 
 The period 2016-2020 is referred as "the great ramp". Several mega-projects (construction of new plants) in Queensland and Western Australian which exponential increased the LNG production capacity resulting to a surge on LNG export volume. In 2020 onwards, we can observe a plateau of export volume as the plant facilities reach its normal production capacity.
 
@@ -54,7 +51,6 @@ The figure below shows the resulting 6-month and 12-month MA of the `AU_LNG`. No
 
 <img src="images/Blog_STL_2_MA.png?raw=true"/>
 
-
 **Tool 2: Seasonal Trend Decomposition using LOESS (STL) decomposition**
 Developed by R.B. Cleveland et al (1990), this method is a versatile and robust method for decomposition. LOESS (locally estimated scatterplot smoothing) is a method for estimating nonlinear relationships.
 
@@ -67,7 +63,6 @@ We can use Python statsmodels library to carry-out STL decomposition. The figure
 
 <img src="images/Blog_STL_3_STL.png?raw=true"/>
 
-
 **insight:** To check for the quality of the decomposition, we can look at the auto-correlation function (ACF) of the residual. The ACF shows that there are significant auto-correlations of the residual at its 1-month, 3-month, and 8-month lag. This suggest that there is still some information(signal) that were not captured. Researchers can fine-tune the STL parameters or explore other decomposition methods.
 
 See the statsmodels [API](https://www.statsmodels.org/stable/examples/notebooks/generated/stl_decomposition.html) for details of the parameters.
@@ -75,8 +70,7 @@ See the statsmodels [API](https://www.statsmodels.org/stable/examples/notebooks/
 **Tool 3: Prophet Model**
 Introduced by Facebook  ([S. J. Taylor & Letham, 2018](https://doi.org/10.1080/00031305.2017.1380080)). An pre-print of the paper can be found [here](https://peerj.com/preprints/3190v2.pdf). [Prophet](https://facebook.github.io/prophet/) is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects.
 
-
-<img src="images/Blog_STL_eq5.png?raw=true"/>
+<img src="images/Blog_STL_eq5.png?raw=true" height="120"/>
 
 We applied Prophet model to the `AU_LNG` series (see Figure below). We also included Australian Holidays (number of holidays in a month) as an additional regressor, e.g., New Year's Day, Australia Day, Holy Week, ANZAC Day, etc.
 
