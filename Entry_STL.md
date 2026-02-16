@@ -61,7 +61,7 @@ The key advantages of STL are:
 
 We can use Python statsmodels library to carry-out STL decomposition. The figure below shows the resulting trend, cycle, and residual component after applying STL (Panel a). The seasonal plot showing the levels of the seasonal component for the same month cross different years also indicate how robust/predictable the cyclic pattern is. Ideally, the levels of cyclic component would be the same for the same month but real-world data always tend to deviate from ideal assumptions.
 
-<img src="images/Blog_STL_3_STL.png?raw=true" height = "200"/>
+<img src="images/Blog_STL_3_STL.png?raw=true"/>
 
 **insight:** To check for the quality of the decomposition, we can look at the auto-correlation function (ACF) of the residual. The ACF shows that there are significant auto-correlations of the residual at its 1-month, 3-month, and 8-month lag. This suggest that there is still some information(signal) that were not captured. Researchers can fine-tune the STL parameters or explore other decomposition methods.
 
@@ -82,7 +82,7 @@ where:
 
 We applied Prophet model to the `AU_LNG` series (see Figure below). We also included Australian Holidays (number of holidays in a month) as an additional regressor, e.g., New Year's Day, Australia Day, Holy Week, ANZAC Day, etc.
 
-<img src="images/Blog_STL_4_Prophet.png?raw=true" height = "200"/>
+<img src="images/Blog_STL_4_Prophet.png?raw=true"/>
 
 Comparing with the previous results using STL, we find the same trend extracted by Prophet. However, the variation (amplitude) in the seasonal and residual components are smaller compared to STL. The ACF of the residual also shows significant auto-correlation at lag 1-month only.
 
