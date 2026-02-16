@@ -27,6 +27,7 @@ Approach using Google Trends and XGBoost Model]
 **Abstract.** High frequency and granular data are integral in crafting prompt and appropriate measures toward mitigating impact of economic headwinds. We construct a near real-time Gross Domestic Product (GDP) growth tracker that capitalizes on available high frequency alternative data and state-of-the-art machine learning models. The tracker serves as a complementary surveillance tool for monitoring economic activity.
 
 ---
+
 [Efficient multi-site two-photon functional imaging of neuronal circuits]({% link https://opg.optica.org/directpdfaccess/9c09904e-8606-494b-b94feaf3d11cd06c_355616/boe-7-12-5325.pdf?da=1&id=355616&seq=0&mobile=no %})
 
 **Abstract.** Two-photon imaging using high-speed multi-channel detectors is a promising approach for optical recording of cellular membrane dynamics at multiple sites. A main bottleneck of this technique is the limited number of photons captured within a short exposure time (~1ms). Here, we implement temporal gating to improve the two-photon fluorescence yield from holographically projected multiple foci whilst maintaining a biologically safe incident average power. We observed up to 6x improvement in the signal-to-noise ratio (SNR) in Fluorescein and cultured hippocampal neurons showing evoked calcium transients. With improved SNR, we could pave the way to achieving multi-site optical recording of fluorogenic probes with response times in the order of ~1ms. 
