@@ -45,9 +45,7 @@ The period 2016-2020 is referred as "the great ramp". Several mega-projects (con
 
 **Tool 1: Moving averages** is a classical approach to extract the trend-cycle component of the series. A moving average (MA) of order $m$ is defined as
 
-\begin{align*}
-    \hat{T}_t &= \frac{1}{m} \sum_{j=-k}^{k} y_{t+j}
-\end{align*}
+$$    \hat{T}_t = \frac{1}{m} \sum_{j=-k}^{k} y_{t+j} $$
 
 where $m = 2k + 1$. In other words, the estimate of the trend-cycle at time $t$ is obtained by averaging the time series values within $k$ periods of $t$. This is also known as a centered moving average or an $m-$MA.
 
@@ -79,10 +77,7 @@ Introduced by Facebook  ([S. J. Taylor & Letham, 2018](https://doi.org/10.1080/0
 
 Prophet can be viewed as a nonlinear regression model of the form:
 
-\begin{align*}
-    y_t &= g(t) + s(t) + h(t) + \varepsilon_t
-\end{align*}
-
+$$    y_t = g(t) + s(t) + h(t) + \varepsilon_t $$
 where:
 - $g(t)$ is the trend function, which models non-periodic changes. By default, it is a piecewise-linear "growth term."
 - $s(t)$ describes the seasonal patterns (e.g., yearly, weekly)
