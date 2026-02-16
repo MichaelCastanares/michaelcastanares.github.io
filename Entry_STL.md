@@ -76,12 +76,19 @@ See the statsmodels [API](https://www.statsmodels.org/stable/examples/notebooks/
 Introduced by Facebook  ([S. J. Taylor & Letham, 2018](https://doi.org/10.1080/00031305.2017.1380080)). An pre-print of the paper can be found [here](https://peerj.com/preprints/3190v2.pdf). [Prophet](https://facebook.github.io/prophet/) is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects.
 
 
+The Prophet model can be written as
+
 <img src="images/Blog_STL_eq5.png?raw=true"/>
+
+where:
+- $g(t)$ is the trend function, which models non-periodic changes. By default, it is a piecewise-linear "growth term."
+- $s(t)$ describes the seasonal patterns (e.g., yearly, weekly)
+- $h(t)$ represents the effects of holidays or other irregular events.
+- $\varepsilon_t$ is the error term, assumed to be white noise.
 
 We applied Prophet model to the `AU_LNG` series (see Figure below). We also included Australian Holidays (number of holidays in a month) as an additional regressor, e.g., New Year's Day, Australia Day, Holy Week, ANZAC Day, etc.
 
 <img src="images/Blog_STL_4_Prophet.png?raw=true"/>
-
 
 Comparing with the previous results using STL, we find the same trend extracted by Prophet. However, the variation (amplitude) in the seasonal and residual components are smaller compared to STL. The ACF of the residual also shows significant auto-correlation at lag 1-month only.
 
