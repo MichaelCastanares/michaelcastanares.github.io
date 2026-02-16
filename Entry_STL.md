@@ -25,7 +25,7 @@ There are mainly two models for decomposition:
 
 #### Additive model. The sum of the components constitute the signal
 
-<img src="images/Blog_STL_eq1.png?raw=true" height="75"/>
+<img src="images/Blog_STL_eq1.png?raw=true" height="50"/>
 
 #### Multiplicative model. The components are multiplied together to form the signal. Multiplicative model is appropriate when the seasonal pattern/variations increases with the level of the time series.
 
