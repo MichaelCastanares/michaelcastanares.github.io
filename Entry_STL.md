@@ -43,7 +43,7 @@ The period 2016-2020 is referred as "the great ramp". Several mega-projects (con
 
 **Tool 1: Moving averages** is a classical approach to extract the trend-cycle component of the series. A moving average (MA) of order $m$ is defined as
 
-<img src="images/Blog_STL_eq4.png?raw=true" height="100"/>
+<img src="images/Blog_STL_eq4.png?raw=true" height="75"/>
 
 where $m = 2k + 1$. In other words, the estimate of the trend-cycle at time $t$ is obtained by averaging the time series values within $k$ periods of $t$. This is also known as a centered moving average or an $m-$MA.
 
