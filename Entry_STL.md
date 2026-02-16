@@ -20,6 +20,7 @@ Here, I will describe some of the most common methods for time-series decomposit
 **My personal experience: Breaking the problem into small parts**.
 When my wife and I bought two 37kg Ikea desks, we faced a challenge: how to transport them from the carpark to our home? Rather than struggling with the heavy boxes, we applied the "break it down" principle. We unpacked the boxes at the car and sorted components—large parts (planks, metal frames) and small parts (drawer components)—then carried them piece by piece (see photo below). This approach let us complete the move without strain, proving that breaking big problems into small, manageable pieces creates small wins toward larger goals.
 
+<img src="images/Blog_STL_A_Story.png?raw=true"/>
 
 **Time series components**. A time series $y_t$ can be composed of three components: a seasonal component $S_t$, a trend-cycle component $T_t$, and a remainder/residual component $R_t$.
 
@@ -42,6 +43,9 @@ insight: A multiplicative model can be reduced to a linear model by applying a l
 
 **Data**. Lets take the Australian Export volume of Liquified Natural Gas (LNG), `AU_LNG` series, in Megaliter as an example (see photo below).
 
+<img src="images/Blog_STL_1_gas_exports.png?raw=true"/>
+
+
 The period 2016-2020 is referred as "the great ramp". Several mega-projects (construction of new plants) in Queensland and Western Australian which exponential increased the LNG production capacity resulting to a surge on LNG export volume. In 2020 onwards, we can observe a plateau of export volume as the plant facilities reach its normal production capacity.
 
 **Tool 1: Moving averages** is a classical approach to extract the trend-cycle component of the series. A moving average (MA) of order $m$ is defined as
@@ -54,6 +58,8 @@ where $m = 2k + 1$. In other words, the estimate of the trend-cycle at time $t$ 
 
 The figure below shows the resulting 6-month and 12-month MA of the `AU_LNG`. Note that a larger order $m$ results to a smoother series emphasizing more the trend component.
 
+<img src="images/Blog_STL_2_MA.png?raw=true"/>
+
 
 **Tool 2: Seasonal Trend Decomposition using LOESS (STL) decomposition**
 Developed by R.B. Cleveland et al (1990), this method is a versatile and robust method for decomposition. LOESS (locally estimated scatterplot smoothing) is a method for estimating nonlinear relationships.
@@ -64,6 +70,9 @@ The key advantages of STL are:
 * It is robust to outliers and will be part of the remainder.
 
 We can use Python statsmodels library to carry-out STL decomposition. The figure below shows the resulting trend, cycle, and residual component after applying STL (Panel a). The seasonal plot showing the levels of the seasonal component for the same month cross different years also indicate how robust/predictable the cyclic pattern is. Ideally, the levels of cyclic component would be the same for the same month but real-world data always tend to deviate from ideal assumptions.
+
+<img src="images/Blog_STL_3_STL.png?raw=true"/>
+
 
 **insight:** To check for the quality of the decomposition, we can look at the auto-correlation function (ACF) of the residual. The ACF shows that there are significant auto-correlations of the residual at its 1-month, 3-month, and 8-month lag. This suggest that there is still some information(signal) that were not captured. Researchers can fine-tune the STL parameters or explore other decomposition methods.
 
@@ -87,6 +96,9 @@ where:
 
 We applied Prophet model to the `AU_LNG` series (see Figure below). We also included Australian Holidays (number of holidays in a month) as an additional regressor, e.g., New Year's Day, Australia Day, Holy Week, ANZAC Day, etc.
 
+<img src="images/Blog_STL_4_Prophet.png?raw=true"/>
+
+
 Comparing with the previous results using STL, we find the same trend extracted by Prophet. However, the variation (amplitude) in the seasonal and residual components are smaller compared to STL. The ACF of the residual also shows significant auto-correlation at lag 1-month only.
 
 **insights**.
@@ -105,6 +117,8 @@ The three tools explored here offer different trade-offs:
 Always inspect the residual's ACF. Significant autocorrelation signals that patterns remain uncaptured—opportunities for model refinement or alternative approaches. Once decomposed, each component can be modeled separately (exponential smoothing for trend, seasonal naïve for cycles, AR models for residuals) before recombining for forecasts.
 
 **Bringing the pieces together**. Ending with the Ikea story, here is a photo of the two desks after assembly. It is currently my workspace at home and has this library vibe to it.
+
+<img src="images/Blog_STL_B_Story.png?raw=true"/>
 
 Decomposition isn't just a preprocessing step—it's a lens for understanding what drives your time series.
 
