@@ -7,6 +7,15 @@ title: Blog
 
 ---
 
+["Decomposition: Breaking the signal into components"](/Entry_STL)
+*Updated: 16 February 2026*
+
+Time series data can exhibit complex and rich patterns. It is often helpful to split a time series into several components - **trend**, **seasonality**, and **cycles** - known as "decomposition".
+
+Here, I will describe some of the most common methods for time-series decomposition. I will introduce python libraries (e.g., Moving averages, STL, Prophet) that I use for decomposition. My goal by the end of this blog is for us to look at complex signal thru the lense of decomposition.
+
+---
+
 ["Useful metrics to kickstart your analysis on time-series"](/Entry_TSFEATURES)
 
 *Updated: 6 February 2026*

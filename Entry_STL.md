@@ -10,13 +10,10 @@ title: Blog
 ### "Decomposition: Breaking the signal into components"
 *Updated: 16 February 2026*
 
-
-# Intro:
 Time series data can exhibit complex and rich patterns. It is often helpful to split a time series into several components - **trend**, **seasonality**, and **cycles** - known as "decomposition".
 
 Here, I will describe some of the most common methods for time-series decomposition. I will introduce python libraries (e.g., Moving averages, STL, Prophet) that I use for decomposition. My goal by the end of this blog is for us to look at complex signal thru the lense of decomposition.
 
-# Content
 **My personal experience: Breaking the problem into small parts**.
 When my wife and I bought two 37kg Ikea desks, we faced a challenge: how to transport them from the carpark to our home? Rather than struggling with the heavy boxes, we applied the "break it down" principle. We unpacked the boxes at the car and sorted components—large parts (planks, metal frames) and small parts (drawer components)—then carried them piece by piece (see photo below). This approach let us complete the move without strain, proving that breaking big problems into small, manageable pieces creates small wins toward larger goals.
 
