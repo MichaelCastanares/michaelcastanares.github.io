@@ -70,8 +70,6 @@ See the statsmodels [API](https://www.statsmodels.org/stable/examples/notebooks/
 **Tool 3: Prophet Model**
 Introduced by Facebook  ([S. J. Taylor & Letham, 2018](https://doi.org/10.1080/00031305.2017.1380080)). An pre-print of the paper can be found [here](https://peerj.com/preprints/3190v2.pdf). [Prophet](https://facebook.github.io/prophet/) is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects.
 
-<img src="images/Blog_STL_eq5.png?raw=true" height="250"/>
-
 The Prophet model can be written as
 
 <img src="images/Blog_STL_eq5.png?raw=true"/>
