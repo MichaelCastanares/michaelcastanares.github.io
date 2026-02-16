@@ -10,8 +10,11 @@ title: Portfolio
 ## Portfolio
 
 ---
-
+<span style="color:blue">
+  
 ### Research Initiatives: Use of alternative datasets to nowcast the Philippine economy
+  
+</span>
 
 #### Nowcasting Philippine Household Consumption: An Alternative
 Approach using Google Trends and XGBoost Model
