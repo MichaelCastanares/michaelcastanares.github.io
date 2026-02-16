@@ -43,7 +43,7 @@ The period 2016-2020 is referred as "the great ramp". Several mega-projects (con
 
 **Tool 1: Moving averages** is a classical approach to extract the trend-cycle component of the series. A moving average (MA) of order $m$ is defined as
 
-<img src="images/Blog_STL_eq4.png?raw=true"/>
+<img src="images/Blog_STL_eq4.png?raw=true" height="100"/>
 
 where $m = 2k + 1$. In other words, the estimate of the trend-cycle at time $t$ is obtained by averaging the time series values within $k$ periods of $t$. This is also known as a centered moving average or an $m-$MA.
 
@@ -75,7 +75,6 @@ Introduced by Facebook  ([S. J. Taylor & Letham, 2018](https://doi.org/10.1080/0
 We applied Prophet model to the `AU_LNG` series (see Figure below). We also included Australian Holidays (number of holidays in a month) as an additional regressor, e.g., New Year's Day, Australia Day, Holy Week, ANZAC Day, etc.
 
 <img src="images/Blog_STL_4_Prophet.png?raw=true"/>
-
 
 Comparing with the previous results using STL, we find the same trend extracted by Prophet. However, the variation (amplitude) in the seasonal and residual components are smaller compared to STL. The ACF of the residual also shows significant auto-correlation at lag 1-month only.
 
