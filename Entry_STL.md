@@ -77,7 +77,8 @@ Introduced by Facebook  ([S. J. Taylor & Letham, 2018](https://doi.org/10.1080/0
 
 Prophet can be viewed as a nonlinear regression model of the form:
 
-$$    y_t = g(t) + s(t) + h(t) + \varepsilon_t $$
+$$y_t = g(t) + s(t) + h(t) + \var\epsilon_t$$
+
 where:
 - $g(t)$ is the trend function, which models non-periodic changes. By default, it is a piecewise-linear "growth term."
 - $s(t)$ describes the seasonal patterns (e.g., yearly, weekly)
