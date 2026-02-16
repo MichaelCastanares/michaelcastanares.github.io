@@ -33,7 +33,7 @@ $$ y_t = S_t \times T_t \times R_t $$
 
 insight: A multiplicative model can be reduced to a linear model by applying a log transform. It is important to check the unit of measures are consistent when transforming datasets to different spaces (linear, log-spaces). In my experience, these data transforms are intermediate steps. Stakeholders would still require that the results be expressed in their original units.
 
-$$ y_t &= S_t \times T_t \times R_t \quad \Longleftrightarrow \quad \log y_t = \log S_t + \log T_t + \log R_t $$
+$$ y_t = S_t \times T_t \times R_t \quad \Longleftrightarrow \quad \log y_t = \log S_t + \log T_t + \log R_t $$
 
 
 **Data**. Lets take the Australian Export volume of Liquified Natural Gas (LNG), `AU_LNG` series, in Megaliter as an example (see photo below).
