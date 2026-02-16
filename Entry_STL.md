@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 
-[Home](/) | [Blog](/blog) | [Projects](/projects)
+[Home](/) | [Research Blog](/blog)
 
 ---
 
@@ -107,7 +107,7 @@ Always inspect the residual's ACF. Significant autocorrelation signals that patt
 
 Decomposition isn't just a preprocessing step—it's a lens for understanding what drives your time series.
 
-Codes used to generate the figures may be found here: [View Code Repository on GitHub]()
+Codes used to generate the figures may be found here: [View Code Repository on GitHub](https://github.com/MichaelCastanares/Github/tree/main/TS_STL)
 
 Disclaimer of AI use: Claude Sonnet was used to improve the flow of the discussion.
 
