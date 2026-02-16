@@ -9,13 +9,9 @@ title: Portfolio
 
 ## Portfolio
 
----
-<span style="color:blue">
+--- 
+## Research Initiatives: Use of alternative datasets to nowcast the Philippine economy
   
-### Research Initiatives: Use of alternative datasets to nowcast the Philippine economy
-  
-</span>
-
 #### Nowcasting Philippine Household Consumption: An Alternative
 Approach using Google Trends and XGBoost Model
 
@@ -33,7 +29,7 @@ Approach using Google Trends and XGBoost Model
 
 
 ---
-### Neurophotonics research
+## Neurophotonics research
 
 #### Efficient multi-site two-photon functional imaging of neuronal circuits
 
