@@ -25,17 +25,16 @@ There are mainly two models for decomposition:
 
 #### Additive model. The sum of the components constitute the signal
 
-$$ y_t =  S_t + T_t + R_t $$
+<img src="images/Blog_STL_eq1.png?raw=true"/>
 
 #### Multiplicative model. The components are multiplied together to form the signal. Multiplicative model is appropriate when the seasonal pattern/variations increases with the level of the time series.
 
-$$ y_t = S_t \times T_t \times R_t $$
+<img src="images/Blog_STL_eq2.png?raw=true"/>
 
 insight: A multiplicative model can be reduced to a linear model by applying a log transform. It is important to check the unit of measures are consistent when transforming datasets to different spaces (linear, log-spaces). In my experience, these data transforms are intermediate steps. Stakeholders would still require that the results be expressed in their original units.
 
-\begin{align*}
-    y_t &= S_t \times T_t \times R_t \quad \Longleftrightarrow \quad \log y_t = \log S_t + \log T_t + \log R_t
-\end{align*}
+<img src="images/Blog_STL_eq3.png?raw=true"/>
+
 
 
 **Data**. Lets take the Australian Export volume of Liquified Natural Gas (LNG), `AU_LNG` series, in Megaliter as an example (see photo below).
@@ -47,9 +46,7 @@ The period 2016-2020 is referred as "the great ramp". Several mega-projects (con
 
 **Tool 1: Moving averages** is a classical approach to extract the trend-cycle component of the series. A moving average (MA) of order $m$ is defined as
 
-\begin{align*}
-    \hat{T}_t &= \frac{1}{m} \sum_{j=-k}^{k} y_{t+j}
-\end{align*}
+<img src="images/Blog_STL_eq4.png?raw=true"/>
 
 where $m = 2k + 1$. In other words, the estimate of the trend-cycle at time $t$ is obtained by averaging the time series values within $k$ periods of $t$. This is also known as a centered moving average or an $m-$MA.
 
@@ -79,17 +76,7 @@ See the statsmodels [API](https://www.statsmodels.org/stable/examples/notebooks/
 Introduced by Facebook  ([S. J. Taylor & Letham, 2018](https://doi.org/10.1080/00031305.2017.1380080)). An pre-print of the paper can be found [here](https://peerj.com/preprints/3190v2.pdf). [Prophet](https://facebook.github.io/prophet/) is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects.
 
 
-Prophet can be viewed as a nonlinear regression model of the form:
-
-\begin{align*}
-    y_t &= g(t) + s(t) + h(t) + \varepsilon_t
-\end{align*}
-
-where:
-- $g(t)$ is the trend function, which models non-periodic changes. By default, it is a piecewise-linear "growth term."
-- $s(t)$ describes the seasonal patterns (e.g., yearly, weekly)
-- $h(t)$ represents the effects of holidays or other irregular events.
-- $\varepsilon_t$ is the error term, assumed to be white noise.
+<img src="images/Blog_STL_eq5.png?raw=true"/>
 
 We applied Prophet model to the `AU_LNG` series (see Figure below). We also included Australian Holidays (number of holidays in a month) as an additional regressor, e.g., New Year's Day, Australia Day, Holy Week, ANZAC Day, etc.
 
