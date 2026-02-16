@@ -26,6 +26,9 @@ Approach using Google Trends and XGBoost Model
 
 **Abstract.** High frequency and granular data are integral in crafting prompt and appropriate measures toward mitigating impact of economic headwinds. We construct a near real-time Gross Domestic Product (GDP) growth tracker that capitalizes on available high frequency alternative data and state-of-the-art machine learning models. The tracker serves as a complementary surveillance tool for monitoring economic activity.<a href = "https://www.bsp.gov.ph/Media_And_Research/Publications/EN23-02.pdf"> Link to paper </a>
 
+<img src="images/Paper_Tracker.gif?raw=true"/>
+
+
 ---
 
 ### Efficient multi-site two-photon functional imaging of neuronal circuits
