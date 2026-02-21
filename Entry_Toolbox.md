@@ -69,11 +69,23 @@ As pointed by [Hyndman], MAPE tends to be bias towards under-estimate ($\hat{Y}_
 $$ \text{sMAPE} = 100 \sum{1}{n}{\frac{2|Y_t - \hat{Y}_t|}{|Y_t + \hat{Y}_t|}} $$
 
 
-### C. Models
-Brief description of the models.
+### C. Sample Analysis
+
+Lets apply this concepts to analyze our sample datasets
+
+
+**Exchange rate**
+
+For the exchange rate dataset, we split the series into train (December 2024 and earlier) and test set (January 2025). Since most of the naive models only require past values, there is no need not carry out any fitting - I will cover model fitting in the next few blog post.
+
+**Beer production**
+
 
 
 **Final thoughts**
+
+To wrap up, 
+
 
 
 
