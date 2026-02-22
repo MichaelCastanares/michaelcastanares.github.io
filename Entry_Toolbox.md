@@ -64,7 +64,7 @@ $$ \text{MAPE} = \frac{100}{n} \sum{\frac{|Y_t - \hat{Y}_t|}{|Y_t|}} $$
 
 Research paper often use MAPE to report improvement of models from benchmark. In my experience, these values may be inflated particularly when the actual values are small (close to zero). Thus, its also important to read both MAPE in the context of the actual values.
 
-As pointed by [Hyndman], MAPE tends to be bias towards under-estimate ($\hat{Y}_t < $\hat{Y}$). To avoid this assymetry, it is suggested to use Scaled MAPE (sMAPE).
+As pointed by [Hyndman], MAPE tends to be bias towards under-estimate ($\hat{Y}_t < \hat{Y}$). To avoid this assymetry, it is suggested to use Scaled MAPE (sMAPE).
 
 $$ \text{sMAPE} = \frac{100}{n} \sum{\frac{2|Y_t - \hat{Y}_t|}{|Y_t + \hat{Y}_t|}} $$
 
