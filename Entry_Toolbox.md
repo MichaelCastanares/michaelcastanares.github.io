@@ -50,7 +50,7 @@ Real-world time series often have shocks and surprises (patterns that were not f
 
 $$\text{MAE} = \frac{1}{n}\sum_{t=1}^n{Y_t - \hat{Y}_t} $$
 
-$$\text{RMSE} = \sqrt{\frac{1}{n}\sum_{t=1}^n{(Y_t - \hat{Y}_t)^2}}
+$$\text{RMSE} = \sqrt{\frac{1}{n}\sum_{t=1}^n{(Y_t - \hat{Y}_t)^2}} $$
 
 **insight**. I personally prefer MAE in reporting model performance to stakeholders as it is both easy to understand and compute. It provides a direct measure of how far I'm off in absolute terms.
 
