@@ -128,34 +128,23 @@ The MDA takes up a values from [0,1]. Alternatively, I interpret it as "the frac
 **D. Monte-Carlo Simulation**. 
 While Python libraries offer a suite models that we can use, we can also produce forecast using monte-carlo simuations. Here I simulate a random walk with drift model (using Geometric Brownian Motion) and created 1,000 possible "paths" of forecast. The approach is to model the incremental change of the prices day-by-day, `log_returns`.
 
-$$
-\text{log returns} = \log{P_t} - \log{P_{t-1}}
-$$
+$$ \mathrm{log returns} = \log{P_t} - \log{P_{t-1}} $$
 
  We estimate the statistic (i.e., $\mu$ - dift per day, and $\sigma$ - volatility per day) from the train set. $
 \mu = \text{mean(log returns)}$, $\sigma = \sqrt{\text{var(log returns)}}$.
 
 Using the fitted statistic, we calculate the drift and diffusion coefficients. We simulate a random walk path, $Z$, by drawing 20 values from a normal distribution.
 
-$$
-\text{drift} = (\mu - \sigma^2/2) * dt
-$$
-$$
-\text{diffusion} = \sigma * \sqrt{dt} * Z
-$$
+$$ \text{drift} = (\mu - \sigma^2/2) * dt $$
+$$ \text{diffusion} = \sigma * \sqrt{dt} * Z $$
 
 The corresponding log_returns for each time-step is
-$$
-\text{log returns} = \text{drift} + \text{diffusion}
-$$
+$$ \text{log returns} = \text{drift} + \text{diffusion} $$
 
-We then propagate the initial price, $P_{t=0}$, by taking the cumulative sum, $
-\text{cum-log returns}_t = \sum_{i=0}{\text{log returns}_i}^t$.
+We then propagate the initial price, $P_{t=0}$, by taking the cumulative sum, $ \text{cum-log returns}_t = \sum_{i=0}{\text{log returns}_i}^t$.
 
 The resulting price path is
-$$
-P^{(k)} = P_{t=0} * \exp{\{\text{cum-log returns}_t\}}
-$$
+$$ P^{(k)} = P_{t=0} * \exp{\{\text{cum-log returns}_t\}} $$
 
 > Back to our example, we can create several price paths, $P^{(k)}$ by iterating this process (see sample 50 paths below). In addition, we can generate say 1,000 possible paths take the percentiles to draw a confidence band. In our example, the AUD/PHP exchange rate of the test set is within 80% confidence band of forecast from our monte-carlo model.
 ><img src="images/Blog_Toolbox_5.png?raw=true"/>
