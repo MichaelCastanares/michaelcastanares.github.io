@@ -132,7 +132,12 @@ $$
 \mathrm{log returns} = \log{P_t} - \log{P_{t-1}}
 $$
 
+<<<<<<< HEAD
 We estimate the statistic (i.e., $\mu$ - drift per day, and $\sigma$ - volatility per day) from the train set: $\mu = \mathrm{mean(log returns)}, \sigma = \sqrt{\mathrm{var(log returns)}}$.
+=======
+ We estimate the statistic (i.e., $\mu$ - dift per day, and $\sigma$ - volatility per day) from the train set. $
+\mu = \\mathrm{mean(log returns)}, \sigma = \sqrt{\\mathrm{var(log returns)}}$.
+>>>>>>> 42db985c1066aa848e01576a37acd0423ad4b220
 
 Using the fitted statistic, we calculate the drift and diffusion coefficients. We simulate a random walk path, $Z$, by drawing 20 values from a normal distribution.
 
@@ -145,15 +150,15 @@ $$
 
 The corresponding log_returns for each time-step is
 $$
-\mathrm{log returns} = \mathrm{drift} + \mathrm{diffusion}
+\mathrm{log\_ returns} = \mathrm{drift} + \mathrm{diffusion}
 $$
 
 We then propagate the initial price, $P_{t=0}$, by taking the cumulative sum, $
-\mathrm{cum-log returns}_t = \sum_{i=0}{\mathrm{log returns}_i}^t$.
+\mathrm{cum-log\ returns}_t = \sum_{i=0}{\mathrm{log\ returns}_i}^t$.
 
 The resulting price path is
 $$
-P^{(k)} = P_{t=0} * \exp{\{\mathrm{cum-log returns}_t\}}
+P^{(k)} = P_{t=0} * \exp{\{\mathrm{cum-log\ returns}_t\}}
 $$
 
 > Back to our example, we can create several price paths, $P^{(k)}$ by iterating this process (see sample 50 paths below). In addition, we can generate say 1,000 possible paths take the percentiles to draw a confidence band. In our example, the AUD/PHP exchange rate of the test set is within 80% confidence band of forecast from our monte-carlo model.
@@ -168,7 +173,7 @@ This toolbox of simple benchmark models, residual diagnostics, and error metrics
 
 
 
-Codes used to generate the figures may be found here: [View Code Repository on GitHub]()
+Codes used to generate the figures may be found here: [View Code Repository on GitHub](https://github.com/MichaelCastanares/Github/tree/c2de492c5bb9f1a0e83da1ed738454e6a086bd01/TS_Toolbox)
 
 Disclaimer of AI use: Claude Sonnet was used to improve the flow of the discussion.
 
