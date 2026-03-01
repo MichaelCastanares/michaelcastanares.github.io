@@ -8,7 +8,8 @@ title: Blog
 ---
 
 ["Forecaster's Toolbox: Residuals and Error metrics"](/Entry_Toolbox)
-*1 March 2026*
+
+*Updated: 1 March 2026*
 
 In the age of Do-It-Yourself (DIY) projects, it is essential to have a toolbox. We all have go-to tools that make our work easier. For me, that would be a drill or ratchet screw-driver.
 
