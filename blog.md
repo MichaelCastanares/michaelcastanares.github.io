@@ -7,6 +7,15 @@ title: Blog
 
 ---
 
+["Forecaster's Toolbox: Residuals and Error metrics"](/Entry_Toolbox)
+*1 March 2026*
+
+In the age of Do-It-Yourself (DIY) projects, it is essential to have a toolbox. We all have go-to tools that make our work easier. For me, that would be a drill or ratchet screw-driver.
+
+For time-series forecasters, the common tools would be benchmark models, residuals, and error metrics. In this blog, I will discuss and share these tools. My goal is to introduce and review these foundational tools useful for us forecasters.
+
+---
+
 ["Decomposition: Breaking the signal into components"](/Entry_STL)
 
 *Updated: 16 February 2026*
