@@ -1,3 +1,11 @@
+---
+layout: default
+title: Blog
+---
+
+[Home](/) | [Research Blog](/blog)
+
+---
 ### "Forecaster's Toolbox: Residuals and Error metrics"
 *1 March 2026*
 
