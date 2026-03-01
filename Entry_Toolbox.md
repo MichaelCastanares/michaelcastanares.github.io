@@ -146,7 +146,7 @@ $$
 
 The corresponding log_returns for each time-step is
 $$
-\mathrm{log\ returns} = \mathrm{drift} + \mathrm{diffusion}
+\mathrm{log\_ returns} = \mathrm{drift} + \mathrm{diffusion}
 $$
 
 We then propagate the initial price, $P_{t=0}$, by taking the cumulative sum, $
