@@ -132,7 +132,7 @@ $$
 \mathrm{log returns} = \log{P_t} - \log{P_{t-1}}
 $$
 
- We estimate the statistic (i.e., $\mu$ - dift per day, and $\sigma$ - volatility per day) from the train set. $
+We estimate the statistic (i.e., $\mu$ - dift per day, and $\sigma$ - volatility per day) from the train set. $
 \mu = \\mathrm{mean(log returns)}, \sigma = \sqrt{\\mathrm{var(log returns)}}$.
 
 Using the fitted statistic, we calculate the drift and diffusion coefficients. We simulate a random walk path, $Z$, by drawing 20 values from a normal distribution.
@@ -140,17 +140,21 @@ Using the fitted statistic, we calculate the drift and diffusion coefficients. W
 $$
 \mathrm{drift} = (\mu - \sigma^2/2) * dt
 $$
+
 $$
 \mathrm{diffusion} = \sigma * \sqrt{dt} * Z
 $$
 
 The corresponding log_returns for each time-step is
 $$
-\mathrm{log\_ returns} = \mathrm{drift} + \mathrm{diffusion}
+\mathrm{log returns} = \mathrm{drift} + \mathrm{diffusion}
 $$
 
-We then propagate the initial price, $P_{t=0}$, by taking the cumulative sum, $
-\mathrm{cum-log\ returns}_t = \sum_{i=0}{\mathrm{log\ returns}_i}^t$.
+We then propagate the initial price, $P_{t=0}$, by taking the cumulative sum, 
+
+$$
+\mathrm{cum-log\ returns}_t = \sum_{i=0}{\mathrm{log\ returns}_i}^t
+$$.
 
 The resulting price path is
 $$
