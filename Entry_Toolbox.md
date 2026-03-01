@@ -133,7 +133,7 @@ $$
 $$
 
  We estimate the statistic (i.e., $\mu$ - dift per day, and $\sigma$ - volatility per day) from the train set. $
-\mu = \mathrm{mean(log returns)}, \sigma = \sqrt{\mathrm{var(log returns)}}$.
+\mu = \\mathrm{mean(log returns)}, \sigma = \sqrt{\\mathrm{var(log returns)}}$.
 
 Using the fitted statistic, we calculate the drift and diffusion coefficients. We simulate a random walk path, $Z$, by drawing 20 values from a normal distribution.
 
