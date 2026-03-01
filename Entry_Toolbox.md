@@ -87,9 +87,9 @@ Real-world time series often have shocks and surprises (patterns that were not f
 ### C. Error metrics
 **Scale-dependent errors**. These are forecast errors that have the same scale as the data (inheriting the same unit of measure). Mean Absolute Error (MAE) and Root-Mean-Squared Error (RMSE) are some common examples
 
-$$\text{MAE} = \frac{1}{n}\sum_{t=1}^n{Y_t - \hat{Y}_t} $$
+$$\mathrm{MAE} = \frac{1}{n}\sum_{t=1}^n{Y_t - \hat{Y}_t} $$
 
-$$\text{RMSE} = \sqrt{\frac{1}{n}\sum_{t=1}^n{(Y_t - \hat{Y}_t)^2}} $$
+$$\mathrm{RMSE} = \sqrt{\frac{1}{n}\sum_{t=1}^n{(Y_t - \hat{Y}_t)^2}} $$
 
 **insight**. I personally prefer MAE in reporting model performance to stakeholders as it is both easy to understand and compute. It provides a direct measure of how far I'm off in absolute terms.
 
@@ -99,13 +99,13 @@ However, for optimizing a forecast model, the choice of error metric will yield 
 
 The Mean Absolute Percentage Error is a popular measure of percentage error. 
 
-$$ \text{MAPE} = \frac{100}{n} \sum{\frac{|Y_t - \hat{Y}_t|}{|Y_t|}} $$
+$$ \mathrm{MAPE} = \frac{100}{n} \sum{\frac{|Y_t - \hat{Y}_t|}{|Y_t|}} $$
 
-Research paper often use MAPE to report improvement of models from benchmark. In my experience, these values may be inflated particularly when the actual values are small (close to zero). Thus, its also important to read both MAPE in the context of the actual values.
+Research paper often use MAPE to report improvement of models from benchmark. In my experience, these values may be inflated particularly when the actual values are small (close to zero). Thus, its also important to read both MAPE in the conmathrm of the actual values.
 
 As pointed by [Hyndman], MAPE tends to be bias towards under-estimate ($\hat{Y}_t < \hat{Y}$). To avoid this assymetry, it is suggested to use Scaled MAPE (sMAPE).
 
-$$ \text{sMAPE} = \frac{100}{n} \sum{\frac{2|Y_t - \hat{Y}_t|}{|Y_t + \hat{Y}_t|}} $$
+$$ \mathrm{sMAPE} = \frac{100}{n} \sum{\frac{2|Y_t - \hat{Y}_t|}{|Y_t + \hat{Y}_t|}} $$
 
 
 **Directional Accuracy**
@@ -129,32 +129,32 @@ The MDA takes up a values from [0,1]. Alternatively, I interpret it as "the frac
 While Python libraries offer a suite models that we can use, we can also produce forecast using monte-carlo simuations. Here I simulate a random walk with drift model (using Geometric Brownian Motion) and created 1,000 possible "paths" of forecast. The approach is to model the incremental change of the prices day-by-day, `log_returns`.
 
 $$
-\text{log returns} = \log{P_t} - \log{P_{t-1}}
+\mathrm{log returns} = \log{P_t} - \log{P_{t-1}}
 $$
 
  We estimate the statistic (i.e., $\mu$ - dift per day, and $\sigma$ - volatility per day) from the train set. $
-\mu = \text{mean(log returns)}, \sigma = \sqrt{\text{var(log returns)}}$.
+\mu = \mathrm{mean(log returns)}, \sigma = \sqrt{\mathrm{var(log returns)}}$.
 
 Using the fitted statistic, we calculate the drift and diffusion coefficients. We simulate a random walk path, $Z$, by drawing 20 values from a normal distribution.
 
 $$
-\text{drift} = (\mu - \sigma^2/2) * dt
+\mathrm{drift} = (\mu - \sigma^2/2) * dt
 $$
 $$
-\text{diffusion} = \sigma * \sqrt{dt} * Z
+\mathrm{diffusion} = \sigma * \sqrt{dt} * Z
 $$
 
 The corresponding log_returns for each time-step is
 $$
-\text{log returns} = \text{drift} + \text{diffusion}
+\mathrm{log returns} = \mathrm{drift} + \mathrm{diffusion}
 $$
 
 We then propagate the initial price, $P_{t=0}$, by taking the cumulative sum, $
-\text{cum-log returns}_t = \sum_{i=0}{\text{log returns}_i}^t$.
+\mathrm{cum-log returns}_t = \sum_{i=0}{\mathrm{log returns}_i}^t$.
 
 The resulting price path is
 $$
-P^{(k)} = P_{t=0} * \exp{\{\text{cum-log returns}_t\}}
+P^{(k)} = P_{t=0} * \exp{\{\mathrm{cum-log returns}_t\}}
 $$
 
 > Back to our example, we can create several price paths, $P^{(k)}$ by iterating this process (see sample 50 paths below). In addition, we can generate say 1,000 possible paths take the percentiles to draw a confidence band. In our example, the AUD/PHP exchange rate of the test set is within 80% confidence band of forecast from our monte-carlo model.
