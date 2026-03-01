@@ -132,12 +132,7 @@ $$
 \mathrm{log returns} = \log{P_t} - \log{P_{t-1}}
 $$
 
-<<<<<<< HEAD
 We estimate the statistic (i.e., $\mu$ - drift per day, and $\sigma$ - volatility per day) from the train set: $\mu = \mathrm{mean(log returns)}, \sigma = \sqrt{\mathrm{var(log returns)}}$.
-=======
- We estimate the statistic (i.e., $\mu$ - dift per day, and $\sigma$ - volatility per day) from the train set. $
-\mu = \\mathrm{mean(log returns)}, \sigma = \sqrt{\\mathrm{var(log returns)}}$.
->>>>>>> 42db985c1066aa848e01576a37acd0423ad4b220
 
 Using the fitted statistic, we calculate the drift and diffusion coefficients. We simulate a random walk path, $Z$, by drawing 20 values from a normal distribution.
 
