@@ -33,7 +33,7 @@
 }
 
 /* Blockquote Styles */
-blockquote {
+blockquote, blockquote p {
   background-color: #f5f5f5 !important;
   padding: 15px 20px !important;
   margin: 20px 0 !important;
