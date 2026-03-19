@@ -144,7 +144,7 @@ Now, we apply ARIMA on three time-series: AUD/Php exchange rate, AU inflation ra
 Examine the plot below which shows the time-series, first-difference series, and the Auto-correlation function of the first-differenced series. Without any coding, can we make an a good guess on what could be the appropriate ARIMA model for each case and why.
 
 
-<img src="Blog_ARIMA_1.png?raw=true"/>
+<img src="images/Blog_ARIMA_1.png?raw=true"/>
 
 
 > Hypothesis:
@@ -176,11 +176,11 @@ We want to forecast the next time-steps, i.e., 30 days for daily, 4 quarters for
 The figure below shows the results of the 5-step evaluation strategy for the AUD/PHP exchange rate. Stationary Tests (ADF and KPSS Tests) show that the first-differenced of the series is stationary. Applying AutoARIMA, the optimal (p,d,q) coefficients using AIC or BIC is ARIMA (0,1,0) which is a random walk model. This is also confirmed with 30-day ahead forecast evaluation where RWD was the best model (MAE = 0.84 unit). My initial guess of ARIMA(1,1,1) showed also comparable performance with RWD model. 
 
 Focusing on the panel: 30-day forecast of models, we can see that the dynamic forecast is just a straight line with error bands increasing at the horizon. Suppose we want to track the progression of the exchange rate, we can shorten the forecast horizon (say $h$ = 1 day) and refit the model in a 1-day sliding window, i.e., generate new estimates as we incorporate recent data. The resulting 1-day ahead iterative forecast is shown in the lower right panel.
-<img src="Blog_ARIMA_2.png?raw=true"/>
+<img src="images/Blog_ARIMA_2.png?raw=true"/>
 
 The iterative forecast is now able to track the trend of the exchange rate. Naive model still outperforms our guess ARIMA model (1,1,1). Examining the other series, we find that Auto-ARIMA model converges to a ARIMA(0,1,0) or RWD. For the AU inflation rate, our guess model ARIMA (1,1,0) perform slightly better than Naive. Overall, Naive model show consistently robust performance across the three series.
 
-<img src="Blog_ARIMA_3.png?raw=true"/>
+<img src="images/Blog_ARIMA_3.png?raw=true"/>
 
 The table below summarizes our findings.
 
@@ -200,7 +200,7 @@ Source: Author's estimates
 >
 > We may improve the model by adding exogenous regressors (resulting to ARIMAX, etc) to capture surprises/shocks such as the geopolitical events driving the crude oil prices (see Figure below). For longer horizons or more seasonal data, ARIMA would likely outperform. Finally, non-linear models may better capture market complexities that linear models cannot.
 
-<img src="Blog_ARIMA_4.png?raw=true"/>
+<img src="images/Blog_ARIMA_4.png?raw=true"/>
 
 ### Final thoughts
 
