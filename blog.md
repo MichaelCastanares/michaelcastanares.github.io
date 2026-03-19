@@ -7,6 +7,16 @@ title: Blog
 
 ---
 
+["Linear Model: Autoregressive Integrated Moving Average (ARIMA)"](/Entry_ARIMA)
+
+*Updated: 19 March 2026*
+
+Model building is one of the most exciting and critical aspects of time-series forecasting. The key question we grapple with is: "What model best captures the underlying patterns in our time series?" To develop this intuition, we need to get our hands dirty and explore different modeling approaches.
+
+In this blog, I discuss ARIMA — a linear model widely used in time-series forecasting in economics, finance, among others. We will explore the application of ARIMA to different time-series and how it performs against naive models. My goal is to provide a concise overview of the theoretical foundations while demonstrating practical applications using python packages such as Statsforescast and the NIXTLA.
+
+---
+
 ["Forecaster's Toolbox: Residuals and Error metrics"](/Entry_Toolbox)
 
 *Updated: 1 March 2026*
