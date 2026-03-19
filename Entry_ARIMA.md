@@ -133,7 +133,7 @@ There are two ways either by greedy Grid search - trying different combinations 
 
 Static forecast (also referred to as one-step ahead forecast) uses the present and historical values of $X_t$ to forecast $X_{t+1}$. 
 
-In contrast, dynamic forecast utilizes the actual historical and present values ${X_{t-j}, ...,  X_{t-1},....X_{t}}$ and model estimates of future values ${\hat{X}_{t+1}, ..., \hat{X}_{t+h-1}}$ to forecast h-steps ahead $\hat{X}_{t+h}$.
+In contrast, dynamic forecast utilizes the actual historical and present values $( X_{t-j}, ...,  X_{t-1},....X_{t} )$ and model estimates of future values $(\hat{X}_{t+1}, ..., \hat{X}_{t+h-1})$ to forecast h-steps ahead $\hat{X}_{t+h}$.
 
 Intuitively, errors/uncertainty in the dynamic forecast tend to increase with longer horizon as errors of the model estimates compound.
 
