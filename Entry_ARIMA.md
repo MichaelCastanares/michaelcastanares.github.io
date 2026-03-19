@@ -37,14 +37,14 @@ ARIMA model assumes the following:
 
 Next, I describe the three components/sub-models.
 
-###### Component 1: AR(p) model
+**Component 1: AR(p) model**
 Consider modelling $X_t$ using its lag values. ARIMA(p,0,0) is equivalent to AR(p) which relates $X_t$ and its $p$ lag values of $X_t$, i.e., ${X_{t-1},... X_{t-p}}$ with some weights $\alpha_i$.
 
 $$ 
 X_t = \mu + \sum_{i=1}^p{\alpha_iX_{t-i}}
 $$
 
-###### Component 2: Integrated model
+**Component 2: Integrated model**
 The integrated model uses differencing (taking the difference of two consecutive observations) of order $d$ to make the series stationary before ARIMA. 
 
 ARIMA(0,1,0) is the just the first difference equation. This also corresponds to a random walk process.
@@ -77,7 +77,7 @@ $$
 
 > **insight**. When handling a series that is non-stationary series, takin First-order differencing ($d=1$)  is sufficient to make the series stationary. Futhermore, taking the first order log-difference (equivalent to taking the growth rates) helps stabilize any variations in the mean resulting to a stationary series in log-scale.
 
-##### Component 3: Moving Average model
+**Component 3: Moving Average model**
 The moving average component captures the influence (weighted by coefficient $\theta$) of past residuals or errors of order $q$ to the observation. It is written as
 
 ARIMA(0,0,q):
@@ -86,7 +86,7 @@ X_t = \epsilon_t + \theta \epsilon_{t-1} + \ldots + \theta_{q} \epsilon_{t-q}
 $$
 
 
-##### ARIMA in a compact form
+**ARIMA in a compact form**
 >Now, we can write the ARIMA model is a more compact form.
 >
 >$$
