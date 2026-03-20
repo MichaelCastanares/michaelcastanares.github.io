@@ -12,8 +12,8 @@ title: Art
 
 
 **2020**
-<img src="images/ART_2020_Tulips.jng?raw=true"/>
-<img src="images/ART_2020_Sakura.jng?raw=true"/>
-<img src="images/ART_2020_Berries.jng?raw=true"/>
-<img src="images/ART_2020_Sakura2.jng?raw=true"/>
+<img src="images/ART_2020_Tulips.jpg?raw=true"/>
+<img src="images/ART_2020_Sakura.jpg?raw=true"/>
+<img src="images/ART_2020_Berries.jpg?raw=true"/>
+<img src="images/ART_2020_Sakura2.jpg?raw=true"/>
 
