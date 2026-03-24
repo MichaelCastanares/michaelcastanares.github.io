@@ -29,7 +29,7 @@ Amids the COVID-19 pandemic and community lockdown, I was able to revisit painti
 ### 2015-2020
 
 
-<img src="images/ART_2020_Queenstwon.jpg?raw=true"/>
+<img src="images/ART_2020_Queenstown.jpg?raw=true"/>
 
 <img src="images/ART_2019_Autumn.jpg?raw=true"/>
 
