@@ -31,7 +31,7 @@ Amids the COVID-19 pandemic and community lockdown, I was able to revisit painti
 
 <img src="images/ART_2020_Queenstown.jpg?raw=true"/>
 
-<img src="images/ART_2019_Autumn.jpg?raw=true"/>
+<img src="images/ART_2019_Autumn.PNG?raw=true"/>
 
 <img src="images/ART_2017_Spectacular.jpg?raw=true"/>
 **The Carillon (Bell Tower).** This painting captures National Carillon situated in Lake Burley Griffin. The painting captures the play of water and subjects reflection. This scenery is special as it was also taken at the time of Canberra's Balloon Spectacular featuring the colorful hot-air balloons. This is such as "Spectacular" view.
