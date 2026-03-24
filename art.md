@@ -18,6 +18,7 @@ Amids the COVID-19 pandemic and community lockdown, I was able to revisit painti
 
 **Yellow Tulips (Top).** These tulips subject was taken back in 2015-2020 at Canberra Floriade. Floriade in Canbbera is held annually in September at the Commonwealth Park. The Floriade Festival features over a million of floral displays. Here I capture the interplay of thick yellow tulip bulb against sthe green leaves on the background.
 
+
 <img src="images/ART_2020_Sakura.jpg?raw=true"/>
 
 <img src="images/ART_2020_Berries.jpg?raw=true"/>
@@ -27,8 +28,13 @@ Amids the COVID-19 pandemic and community lockdown, I was able to revisit painti
 
 ### 2015-2020
 
-<img src="images/ART_2017_Spectacular.jpg?raw=true"/>
 
+<img src="images/ART_2020_Queenstwon.jpg?raw=true"/>
+
+<img src="images/ART_2019_Autumn.jpg?raw=true"/>
+
+<img src="images/ART_2017_Spectacular.jpg?raw=true"/>
+**The Carillon (Bell Tower).** This painting captures National Carillon situated in Lake Burley Griffin. The painting captures the play of water and subjects reflection. This scenery is special as it was also taken at the time of Canberra's Balloon Spectacular featuring the colorful hot-air balloons. This is such as "Spectacular" view.
 
 <img src="images/ART_2017_TheSwellSeason.jpg?raw=true"/>
 
