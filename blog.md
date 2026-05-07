@@ -6,7 +6,7 @@ title: Blog
 [Home](/) | [Research Blog](/blog) | [ART](/art)
 ---
 
-["Linear Model: Autoregressive Integrated Moving Average (ARIMA)"](/Entry_ARIMA)
+["Anylogic: Consumer Market Simulation"](/Entry_Anylogic)
 
 *Updated: 7 May 2026*
 
