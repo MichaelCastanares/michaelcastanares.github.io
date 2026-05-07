@@ -9,7 +9,7 @@ title: Blog
 ### "Anylogic: Consumer Market Simulation"
 *7 May 2025*
 
-In these past few days, I've been exploring AnyLogic - a leading simulaton and modeling software for busness and industries. I followed their guide "AnyLogic in three-days" to build toy models for business application.
+In these past few days, I've been exploring AnyLogic - a leading simulation and modeling software for business and industries. I followed their guide "AnyLogic in three-days" to build toy models for business application.
 
 In this blog, I demonstrate an example Agent-Based consumer market model using Anylogic Software. Simulation provides a risk-free environment to find new solutions and understand dynamic systems. Building a toy model, I try to answer the following questions:
 
@@ -29,14 +29,14 @@ All simulations were built and run using AnyLogic 8 Personal Learning Edition 8.
 
 **Statecharts**. In AnyLogic, the behavior of an agent is defined using a state chart. Statecharts are advanced constructs for describing event- and time-driven behavior [Anylogic book]. 
 
-A statechart is comprised of states and a transition. A state (represented by a box) describes the characteristics/condition/behavior of an agent. Meanwhile, a transition (represented by arrows) connects one state to another state given certain rate/probability. 
+A statechart is comprised of states and a transition. A state describes the characteristics/condition/behavior of an agent. Meanwhile, a transition (represented by arrows) connects one state to another state given certain rate/probability. 
 
 **Statistics**.The power of ABM is its capability to re-create and predict the emergent behaviors and complex phenomena in a macro-scale [Wiki]. To capture these emergent behaviors, we can utilize aggregate statistical metrics such as counts (e.g., number of agents in a given state) across the simulation steps.
 
 **Interactive App**. AnyLogic allows both modeling and interactive visualization of the model via java application. I think this is a neat feature to communicate the modeling exercise to both technical and non-technical audience.
 
 **A.2 Consumer Market**
-Lets build a toy model of a consumer market following the example in AnyLogic book. We first define the agent behavior, states and transitions. Consider a customer journey with the following States: (A) potential user, (B) wants to buy, and (C) user.
+Let us build a toy model of a consumer market following the example in AnyLogic book. We first define the agent behavior, states and transitions. Consider a customer journey with the following States: (A) potential user, (B) wants to buy, and (C) user. We start with 5,000 agents as potential user in the model.
 
 <img src="./images/Anylogic_CustomerJourney.png" alt="Alt text" width="300">
 
@@ -50,7 +50,7 @@ A potential user (State A) is an agent who is someone who has no information yet
 
 *Figure. The possible transitions to-from a potential user to someone who wants to buy.*
 
-An agent in State B (Who wants to buy, Buyer) has decided to buy a product but need to wait for the product to arrive. This models a case wherein the agent wants to buy a product but the item is not available at the moment. The agent needs to wait for the store to restock the item. However, we consider the agent to be impatient and only allocates a fixed number of days to wait for the product to restock. Past these days, the agent could not wait longer and transitions back to a State A, potential user. If the product restocks within the agent's patience window, the agent purchases the product and transitions to a user.
+An agent in State B (Who wants to buy, Buyer) has decided to buy a product but need to wait for the product to arrive. This models a case wherein the agent wants to buy a product but the item is not available at the moment. The agent needs to wait for the store to restock the item. However, we consider the agent to be impatient and only allocates a fixed number of days to wait for the product to restock. After this waiting period, the agent could not wait longer and transitions back to a State A, potential user. If the product restocks within the agent's patience window, the agent purchases the product and transitions to a user.
 
 <img src="./images/Anylogic_StateBC.png" alt="Alt text" width="300">
 
@@ -63,7 +63,7 @@ The figure below shows the overall statechart of the consumer market model and s
 * Ad Effectiveness (rate per day) - the rate that represents the effectivity of an advertising in leading a person to buy the product;
 * Word-of-Mouth, WOM - is a trigger-based transition when a potential user transitions to a user after receiving a "BUY" recommendation/WOM. This transition occurs only with an Adoption Fraction probability;
 * AdoptionFraction - the rate of adoption describing the transitions of potential user to someone who wants to buy;
-* Discard time - describes the product lifetime.
+* Discard time - describes the number of days until a product is used up.
 
 For the simulation exercise, we have two dynamic parameters:
 
@@ -86,13 +86,13 @@ For the simulation exercise, we have two dynamic parameters:
 | 5   | 7         | 21         | 3.00  | 48.8     |
 | 6   | 7         | 25         | 3.57  | 44.8     |
 
-*Table. Sample results of the simulation comparing various MaxDelivery with the Adoption rate*
+*Table. Sample results of the simulation comparing various runs with different MaxDelivery and resulting Adoption rate*
 
 In the simulation, we vary the Maximum Delivery Time and observe how the no. of Users (Adoption Rate) changes. Based on simulation, we can answer Q1. 
 
 > *Insight*
 > 
-> **Q1:**, "To what extend does business efficiency (customer waiting time/max delivery time) affect product adoption?"
+> **Q1:**, "To what extent does business efficiency (customer waiting time/max delivery time) affect product adoption?"
 > 
 > **A1:**. Business efficiency affects the adoption rate. When business is efficient meeting expectations/patience of consumer (MaxDeliveryTime ~ MaxWaiting), the adoption rate is at 95%. As MaxDeliveryTime lengthens (due to delays or disruptions), the adoption rate falls to 49% when (MaxDelivery/MaxWaiting = 3x). Thus, its is important for business to capture and match the consumers willingness to wait the restocking rate to maximum product sales.
 
@@ -101,7 +101,7 @@ I now extend our base model to incorporate the effect of negative reviews with A
 
 > *Insight*. In building this models, I find that skills and creativity should go together. I need creativity to create an abstraction how the agents would work. I also need skills to translate my ideas and implement it to AnyLogic platform. It was a back-and-forth process of trying to debug and understand how different functions and parameters are setup.
 
-WantsToBuy --> Negative User. This transition is random a 1% probability with the idea that in every 100 buyers, there is a chance 1 buyer who will have a negative review (referred to as NegativeUser).
+WantsToBuy --> Negative User. This transition is random with 1% probability of occuring. The idea that in every 100 buyers, there is a chance 1 buyer who will have a negative review (referred to as NegativeUser).
 
 Now this Negative User will randomly send "DontBuy" message to User and Buyers. For user, receiving a DontBuy message will discourage product use (50% probability of transition USER->BUYER). For buyer, receiving a DontBuy message will encourage a change of decision (90% probability of transition BUYER->PotentialUser).
 
@@ -113,11 +113,11 @@ To understand the effect of negative reviews. I simulate an adversarial attack e
 
 From the simulation from t<180 days, the product adoption increases up to 4,000 users. At t=180 days, we can observe a large drop in USERS due to the adversarial attack. After after 280 days (180 + N_daystoresolve), we can observe that the adoption reverts back to initial level close to 4,000.
 
-We can test this for different N_daystoresolve, 100 days (red), 60 days, 15 days (green) using compare runs in AnyLogic. We can the resulting adoption curve for varied days to resolve. Notably, we can see similar fraction of Negative Users across simulation runs.
+We test this for different N_daystoresolve, 100 days (red), 60 days, 15 days (green) using compare runs in AnyLogic. The resulting adoption curve converges back to initial level faster with a shorter days to resolve. This suggest that resolving the attack in shorted days limits the extent of the loss of user-engagement. Notably, we can see similar fraction of Negative Users across simulation runs.
 
 <img src="./images/Anylogic_Sim2b.png" alt="Alt text" height="300">
 
-I utilized python to further examine the curve, such as taking the area-under-the-curve (AUC). The AUC corresponds to the loss cumulative user engagement with units (N users * time). I normalized the AUC relative to the control case (AUC for DaystoResolve=1). This AUC could be used to estimate the loss in profit when users disengages with the product. 
+I utilized python to further examine the adoption curve and extracting the area-under-the-curve (AUC). The AUC corresponds to the loss cumulative user engagement with units (N users * time). I normalized the AUC relative to the control case (AUC for DaystoResolve=1). This AUC could be used to estimate the loss in profit when users disengages with the product. 
 
 <img src="./images/Anylogic_Results2.png" alt="Alt text" height="200">
 
