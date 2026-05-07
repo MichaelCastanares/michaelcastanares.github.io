@@ -9,11 +9,11 @@ title: Blog
 ### "Anylogic: Consumer Market Simulation"
 *7 May 2025*
 
-In these past few days, I've been exploring AnyLogic - a leading simulation and modeling software for business and industries. I followed their guide "AnyLogic in three-days" to build toy models for business application.
+Imagine we are launching a new product in the market. We want to examine what bottlenecks affect product adoption. To understand the dynamics, we model the market using agent-based simulation via AnyLogic. In these past few days, I've been exploring AnyLogic - a leading simulation and modeling software for business and industries. 
 
-In this blog, I demonstrate an example Agent-Based consumer market model using Anylogic Software. Simulation provides a risk-free environment to find new solutions and understand dynamic systems. Building a toy model, I try to answer the following questions:
+In this blog, I demonstrate an example Agent-Based consumer market model using AnyLogic Software. Simulation provides a risk-free environment to find new solutions and understand dynamic systems. Building a toy model, I try to answer the following questions:
 
-**Q1:** To what extend does business efficiency (customer waiting time/max delivery time) affect product adoption?;
+**Q1:** To what extent does business efficiency (customer waiting time/max delivery time) affect product adoption?;
 
 **Q2:** What is the impact of a negative product review to product adoption?;
 
@@ -27,7 +27,7 @@ All simulations were built and run using AnyLogic 8 Personal Learning Edition 8.
 
 **A.1 Agent-based model (ABM)** is a computational model approach that simulates actions and interactions of autonomous agents to understand the behavior of the system [https://en.wikipedia.org/wiki/Agent-based_model]. It uses a bottom-up approach of defining simple rules of agents in a micro-scale to uncover emergent macro-scale properties of the system.
 
-**Statecharts**. In AnyLogic, the behavior of an agent is defined using a state chart. Statecharts are advanced constructs for describing event- and time-driven behavior [Anylogic book]. 
+**Statecharts**. In AnyLogic, the behavior of an agent is defined using a state chart. Statecharts are advanced constructs for describing event- and time-driven behavior [AnyLogic book]. 
 
 A statechart is comprised of states and a transition. A state describes the characteristics/condition/behavior of an agent. Meanwhile, a transition (represented by arrows) connects one state to another state given certain rate/probability. 
 
