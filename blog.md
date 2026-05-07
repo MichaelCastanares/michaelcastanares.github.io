@@ -4,6 +4,15 @@ title: Blog
 ---
 
 [Home](/) | [Research Blog](/blog) | [ART](/art)
+---
+
+["Linear Model: Autoregressive Integrated Moving Average (ARIMA)"](/Entry_ARIMA)
+
+*Updated: 7 May 2026*
+
+In this blog, I demonstrate an example Agent-Based consumer market model using Anylogic Software. Simulation provides a risk-free environment to find new solutions and understand dynamic systems. My goal is to share some insights to these questions based on the simulation model I built using AnyLogic software.
+
+<img src="images/Anylogic_Sim2.gif?raw=true"/>
 
 ---
 
