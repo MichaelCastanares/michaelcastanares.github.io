@@ -38,7 +38,7 @@ A statechart is comprised of states and a transition. A state (represented by a 
 **A.2 Consumer Market**
 Lets build a toy model of a consumer market following the example in AnyLogic book. We first define the agent behavior, states and transitions. Consider a customer journey with the following States: (A) potential user, (B) wants to buy, and (C) user.
 
-<img src="./images/CustomerJourney.png" alt="Alt text" width="300">
+<img src="./images/Anylogic_CustomerJourney.png" alt="Alt text" width="300">
 
 *Figure. The agents states that captures the customer journey from potential user to user.*
 
@@ -46,13 +46,13 @@ Lets build a toy model of a consumer market following the example in AnyLogic bo
 
 A potential user (State A) is an agent who is someone who has no information yet about the product or is still deciding if he/she wants to buy the product. External factors such as review by word-of-mouth (WOM) and Advertisment (Ad) can help "transition" a potential user to someone who wants to buy (State B).
 
-<img src="./images/StateAB.png" alt="Alt text" width="300">
+<img src="./images/Anylogic_StateAB.png" alt="Alt text" width="300">
 
 *Figure. The possible transitions to-from a potential user to someone who wants to buy.*
 
 An agent in State B (Who wants to buy, Buyer) has decided to buy a product but need to wait for the product to arrive. This models a case wherein the agent wants to buy a product but the item is not available at the moment. The agent needs to wait for the store to restock the item. However, we consider the agent to be impatient and only allocates a fixed number of days to wait for the product to restock. Past these days, the agent could not wait longer and transitions back to a State A, potential user. If the product restocks within the agent's patience window, the agent purchases the product and transitions to a user.
 
-<img src="./images/StateBC.png" alt="Alt text" width="300">
+<img src="./images/Anylogic_StateBC.png" alt="Alt text" width="300">
 
 *Figure. The transitions to-from someone who wants to buy and user. Also, a user can recommend the product through WOM to a potential user.*
 
@@ -70,8 +70,8 @@ For the simulation exercise, we have two dynamic parameters:
 * CantWait - the number of days of that someone who wants to buy is willing to wait for restock (sampled from a triangular probability distribution); and
 * Maximum Delivery time - the maximum delivery time of the product (also follows a triangular probability distribution).
 
-<img src="./images/StateChart1.png" alt="Alt text" height="300">
-<img src="./images/Sim1.gif" alt="Alt text" height="300">
+<img src="./images/Anylogic_StateChart1.png" alt="Alt text" height="300">
+<img src="./images/Anylogic_Sim1.gif" alt="Alt text" height="300">
 
 *Figure. State chart and simulation output varying the Maximum Delivery time.*
 
@@ -106,8 +106,8 @@ WantsToBuy --> Negative User. This transition is random a 1% probability with th
 Now this Negative User will randomly send "DontBuy" message to User and Buyers. For user, receiving a DontBuy message will discourage product use (50% probability of transition USER->BUYER). For buyer, receiving a DontBuy message will encourage a change of decision (90% probability of transition BUYER->PotentialUser).
 
 The corresponding state chart with the negative User is shown below.
-<img src="./images/StateChart2.png" alt="Alt text" height="300">
-<img src="./images/Sim2.gif" alt="Alt text" height="300">
+<img src="./images/Anylogic_StateChart2.png" alt="Alt text" height="300">
+<img src="./images/Anylogic_Sim2.gif" alt="Alt text" height="300">
 
 To understand the effect of negative reviews. I simulate an adversarial attack event on the system at t=180 days. At this point, I increased the Negative contact rate, the number of "DontBuy" messages sent to random agent from 2 to 7 per day. I also included a parameter DaystoResolve which captures the number of days until the attack is removed, 180 + N_daystoresolve.
 
@@ -115,11 +115,11 @@ From the simulation from t<180 days, the product adoption increases up to 4,000 
 
 We can test this for different N_daystoresolve, 100 days (red), 60 days, 15 days (green) using compare runs in AnyLogic. We can the resulting adoption curve for varied days to resolve. Notably, we can see similar fraction of Negative Users across simulation runs.
 
-<img src="./images/Sim2b.png" alt="Alt text" height="300">
+<img src="./images/Anylogic_Sim2b.png" alt="Alt text" height="300">
 
 I utilized python to further examine the curve, such as taking the area-under-the-curve (AUC). The AUC corresponds to the loss cumulative user engagement with units (N users * time). I normalized the AUC relative to the control case (AUC for DaystoResolve=1). This AUC could be used to estimate the loss in profit when users disengages with the product. 
 
-<img src="./images/Results2.png" alt="Alt text" height="200">
+<img src="./images/Anylogic_Results2.png" alt="Alt text" height="200">
 
 > From the simulation, we can provide some insights for 
 > 
