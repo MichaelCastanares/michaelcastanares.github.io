@@ -131,7 +131,7 @@ I utilized python to further examine the curve, such as taking the area-under-th
 This blog demonstrates an agent-based model (ABM) of consumer market built in AnyLogic. From the simulation, I find that matching consumer wait time with the delivery time (business efficiency) affect product adoption. Extending the model the incorporate negative reviews/attacks, I find that highly active negative users decreased product adoption with the AUC as a potential metric to estimate the loss in user engagement and business profit. Overall, this highlights the usefulness of simulation models such as ABM to test scenarios and derive insights that support business profitabilty and operational resilience.
 
 
-Codes used to generate the figures may be found here: [View Code Repository on GitHub]()
+Codes used to generate the figures may be found here: [View Code Repository on GitHub](https://github.com/MichaelCastanares/Github/tree/main/Anylogic_Market)
 
 Disclaimer of AI use: Claude Haiku was used to improve the flow of the discussion.
 
