@@ -33,7 +33,7 @@ A statechart is comprised of states and a transition. A state describes the char
 
 **Statistics**.The power of ABM is its capability to re-create and predict the emergent behaviors and complex phenomena in a macro-scale [Wiki]. To capture these emergent behaviors, we can utilize aggregate statistical metrics such as counts (e.g., number of agents in a given state) across the simulation steps.
 
-**Interactive App**. AnyLogic allows both modeling and interactive visualization of the model via java application. I think this is a neat feature to communicate the modeling exercise to both technical and non-technical audience.
+**Interactive App**. AnyLogic allows both modeling and interactive visualisation of the model via java application. I think this is a neat feature to communicate the modeling exercise to both technical and non-technical audience.
 
 **A.2 Consumer Market**
 Let us build a toy model of a consumer market following the example in AnyLogic book. We first define the agent behavior, states and transitions. Consider a customer journey with the following States: (A) potential user, (B) wants to buy, and (C) user. We start with 5,000 agents as potential user in the model.
