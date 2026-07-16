@@ -15,3 +15,5 @@ google_analytics: UA-000000-0 # your Google Analytics tracking ID here
 header_pages:
   - index.md
   - blog.md
+  - art.md
+  - aboutme.md
