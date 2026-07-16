@@ -3,7 +3,7 @@ layout: default
 title: Art
 ---
 
-[Home](/) | [Research Blog](/blog) | [ART](/art)
+[Home](/) | [Research Blog](/blog) | [ART](/art) | [AboutMe] (/aboutme)
 
 ---
 
