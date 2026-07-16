@@ -3,7 +3,7 @@ layout: default
 title: Portfolio
 ---
 
-[Home](/) | [Research Blog](/blog) | [ART](/art) | [AboutMe] (/aboutme)
+[Home](/) | [Research Blog](/blog) | [ART](/art) | [AboutMe] (/resume)
 
 ---
 
