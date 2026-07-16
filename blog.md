@@ -4,6 +4,7 @@ title: Blog
 ---
 
 [Home](/) | [Research Blog](/blog) | [ART](/art) | [AboutMe] (/aboutme)
+
 ---
 
 ["Anylogic: Consumer Market Simulation"](/Entry_Anylogic)
