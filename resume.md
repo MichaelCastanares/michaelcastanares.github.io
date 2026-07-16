@@ -10,8 +10,9 @@ title: About Me
 # Michael Lawrence Garcia Castanares
 
 **E-mail Address:** mlgcastanares@gmail.com
-**Phone Number:** Available upon request
+
 **Residence:** Toowong, QLD, 4066
+
 **GitHub profile:** [michaelcastanares.github.io](https://michaelcastanares.github.io)
 
 ## PROFESSIONAL SUMMARY
@@ -60,6 +61,36 @@ A Data Scientist with multidisciplinary background and experience in central ban
 * **Master of Science in Data Science** | Asian Institute of Management – Makati City, Manila, Philippines | 2025
 * **Master of Science in Physics (magna cum laude)** | University of the Philippines – Diliman Campus, Quezon City, Manila, Philippines | 2014
 * **Bachelor of Science in Applied Physics** | University of the San Carlos – Cebu City, Cebu, Philippines | 2011
+
+## PUBLICATIONS
+Daria VR, **Castanares ML**, Bachor HA (2021). Spatio-temporal parameters for optical probing of
+neuronal activity. **Biophysical Reviews**. doi:10.3389/fphy.2020.600971
+
+**Castanares ML**, Bachor HA, Daria VR (2020). Analyzing branch-specific dendritic spikes using an
+ultrafast laser scalpel. **Frontiers in Physics** 8, 542.
+
+**Castanares ML**, Stuart G, Daria VR. (2020). Dendritic spikes in apical oblique dendrites of cortical
+layer 5 pyramidal neurons. bioRxiv, 2020.2008.2015.252080. doi:10.1101/2020.08.15.252080
+
+Go MA, Mueller M, **Castanares ML**, Egger V, Daria VR. A compact holographic projector module for
+high-resolution 3D multi-site two-photon photostimulation. **PLoS One**. 2019;14(1): e0210564.
+
+**Castanares ML**, Gautam V, Drury J, Bachor H, and Daria VR, "Efficient multi-site two-photon
+functional imaging of neuronal circuits," **Biomed. Opt. Express** 7, 5325-5334 (2016)
+
+## THESIS/DISSERATION
+
+Ph.D. Dissertation.
+“Optical imaging of dendritic spikes in apical oblique dendrites of layer 5
+pyramidal neurons”, March 2021. A copy of the dissertation can be accessed via
+http://hdl.handle.net/1885/201853. Daria V and Stuart G.(supervisors)
+
+M.Sc. Thesis. “Growth of Saccharomyces cerevisiae yeast cell under broadband light”, April 2014 M.
+Tapang G. (adviser)
+
+Undergraduate Thesis. “Three-Dimensional Modeling through Tomographic Reconstruction with
+Fringe Projection Profilometry,” March 2011
+F. Tallo, M. Castañares, R. Cruzet (external adviser) and R. Violanda (adviser)
 
 ## REFERENCE
 Available upon request
