@@ -3,7 +3,9 @@ layout: default
 title: Portfolio
 ---
 
-[Home](/) | [Research Blog](/blog) | [ART](/art) | [AboutMe](/resume)
+[Home/Research Blog](/) | [ART](/art) | [AboutMe](/resume)
+
+----
 
 ["AI in Education: Machine Learning-based Revised Bloom Taxonomy Classifiers](/Entry_BloomTaxonomy)
 

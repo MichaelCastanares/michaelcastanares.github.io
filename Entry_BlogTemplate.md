@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 
-[Home](/) | [Research Blog](/blog)
+[Home/Research Blog](/) | [ART](/art) | [AboutMe](/resume)
 
 ---
 ### "<Title of the Post>"
