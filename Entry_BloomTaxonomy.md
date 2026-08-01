@@ -96,7 +96,7 @@ In this second example, we can find that the model predicts the text to be eithe
 > 3. Dataset shift is an important aspect to consider especially when evaluating new dataset. It is common issue for pre-trained ML models to underperform on a new data particularly when the characteristics of the new text is different from that of the train set (Waheed et al 2021). Further text processing and model retraining are ways to address dataset shift.
 
 ### C. App Demo
-I've prepared an application to run the trained XGBoost model in evaluating text. You may access the ["ML-based Bloom Classifier" app](appappsgit-fo5u86tmrnqbcfwd9yb7uh.streamlit.app). Password is "education".
+I've prepared an application to run the trained XGBoost model in evaluating text. You may access the "ML-based Bloom Classifier" app (url = "appappsgit-fo5u86tmrnqbcfwd9yb7uh.streamlit.app"). Password is "education".
 <p align="center">
 <img src="./images/Blog_Bloom_app.png?raw=true" width=700>
 </p>
