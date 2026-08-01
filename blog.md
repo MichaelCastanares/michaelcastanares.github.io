@@ -7,6 +7,15 @@ title: Blog
 
 ---
 
+["AI in Education: Machine Learning-based Revised Bloom Taxonomy Classifiers](/Entry_BloomTaxonomy)
+
+*Updated: 26 July 2026*
+
+The surge in AI-generated educational materials has outpaced our capacity to validate their pedagogical quality. How do we ensure that AI-generated questions are aligned with Pedagogical Frameworks? In this blog, I demonstrate building ML models to assess the cognitive levels of text using the revised Bloom Taxonomy framework and public dataset.
+
+<img src="images/Blog_Bloom_app.png?raw=true"/>
+
+
 ["Anylogic: Consumer Market Simulation"](/Entry_Anylogic)
 
 *Updated: 7 May 2026*
