@@ -15,6 +15,7 @@ The surge in AI-generated educational materials has outpaced our capacity to val
 
 <img src="images/Blog_Bloom_app.png?raw=true"/>
 
+---
 
 ["Anylogic: Consumer Market Simulation"](/Entry_Anylogic)
 
