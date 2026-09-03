@@ -21,7 +21,7 @@ A Data Scientist with multidisciplinary background and experience in central ban
 ## SKILLS
 * **Analytics and Data visualization:** Data analysis and visualization (Python, Dash)
 * **Data mining:** Performs data transformations on several languages (Pandas, SQL, PySpark)
-* **Time-series analysis and forecasting:** Develop Econometric and Machine-learning models (Scikit-Learn, Nixtla) using internet search data (Google searches)
+* **Time-series analysis and forecasting:** Develop Econometric and Machine-learning models (Scikit-Learn, Nixtla, MLflow) using internet search data (Google searches)
 * **Text analytics, simulations, and AI:** Train and fine-tunes transformer-based models (Pytorch, HuggingFace Models, Google Colab), builds simulations (Anylogic) and Agentic workflow (LangChain, Claude Code)
 
 ## PROFESSIONAL EXPERIENCE
@@ -61,6 +61,13 @@ A Data Scientist with multidisciplinary background and experience in central ban
 * **Master of Science in Data Science** | Asian Institute of Management – Makati City, Manila, Philippines | 2025
 * **Master of Science in Physics (magna cum laude)** | University of the Philippines – Diliman Campus, Quezon City, Manila, Philippines | 2014
 * **Bachelor of Science in Applied Physics** | University of the San Carlos – Cebu City, Cebu, Philippines | 2011
+
+## OTHER DATA SCIENCE PROJECTS
+**Mining with Al.**  Developed Al tools that significantly impact of mining company's report generation, asset procurement and target setting. The system reduced turn-around times of report from 2 days to 15 mins – minimizing encoding errors. The developed time-series model provided real-time assessment of target setting to support more agile operations.
+
+**Wash, Dry, Analyze.** A geospatial analysis for branch expansion for a Clothing group care. The unsupervised clustering model provided locations for next branches with 90% match with human-validated list based on market research.
+
+
 
 ## PUBLICATIONS
 Daria VR, **Castanares ML**, Bachor HA (2021). Spatio-temporal parameters for optical probing of
