@@ -62,6 +62,7 @@ A Data Scientist with multidisciplinary background and experience in central ban
 * **Master of Science in Physics (magna cum laude)** | University of the Philippines – Diliman Campus, Quezon City, Manila, Philippines | 2014
 * **Bachelor of Science in Applied Physics** | University of the San Carlos – Cebu City, Cebu, Philippines | 2011
 
+
 ## OTHER DATA SCIENCE PROJECTS
 **Mining with Al.**  Developed Al tools that significantly impact of mining company's report generation, asset procurement and target setting. The system reduced turn-around times of report from 2 days to 15 mins – minimizing encoding errors. The developed time-series model provided real-time assessment of target setting to support more agile operations.
 
