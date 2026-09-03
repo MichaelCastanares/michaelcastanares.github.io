@@ -57,7 +57,7 @@ A Data Scientist with multidisciplinary background and experience in central ban
 
 
 ## EDUCATIONAL QUALIFICATIONS AND ACADEMIC AWARDS
-| --- | --- | --- |
+| Degree | Institution & Location | Year |
 | **Doctor of Philosophy in Medical Science** | Australian National University – Canberra, ACT, Australia | 2020 |
 | **Master of Science in Data Science** | Asian Institute of Management – Makati City, Manila, Philippines | 2025 |
 | **Master of Science in Physics** *(magna cum laude)* | University of the Philippines – Diliman Campus, Quezon City, Manila, Philippines | 2014 |
