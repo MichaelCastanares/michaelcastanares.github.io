@@ -7,7 +7,7 @@ title: Portfolio
 
 ----
 
-["AI in Education: Machine Learning-based Revised Bloom Taxonomy Classifiers](/Entry_BloomTaxonomy)
+["AI in Education: Machine Learning-based Revised Bloom Taxonomy Classifiers"](/Entry_BloomTaxonomy)
 
 *Updated: 26 July 2026*
 
