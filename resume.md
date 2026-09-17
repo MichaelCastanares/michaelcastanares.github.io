@@ -22,7 +22,7 @@ A Data Scientist with multidisciplinary background and experience in central ban
 * **Analytics and Data visualization:** Data analysis and visualization (Python, Dash)
 * **Data mining:** Performs data transformations on several languages (Pandas, SQL, PySpark)
 * **Time-series analysis and forecasting:** Develop Econometric and Machine-learning models (Scikit-Learn, Nixtla, MLflow) using internet search data (Google searches)
-* **Text analytics, simulations, and AI:** Train and fine-tunes transformer-based models (Pytorch, HuggingFace Models, Google Colab), builds simulations (Anylogic) and Agentic workflow (LangChain, Claude Code)
+* **Text analytics, simulations, and AI:** Train and fine-tunes transformer-based models (Pytorch, HuggingFace Models, Google Colab), builds simulations (Vensim, Anylogic) and Agentic workflow (LangChain, Claude Code)
 
 ## PROFESSIONAL EXPERIENCE
 
