@@ -3,8 +3,7 @@ layout: default
 title: About Me
 ---
 
-[Home](/) | [Research Blog](/blog) | [ART](/art) | [AboutMe](/resume)
-
+[Home/Research Blog](/) | [ART](/art) | [AboutMe](/resume)
 ---
 
 # Michael Lawrence Garcia Castanares
