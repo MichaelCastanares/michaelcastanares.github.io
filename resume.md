@@ -10,7 +10,7 @@ title: About Me
 
 **E-mail Address:** mlgcastanares@gmail.com
 
-**Residence:** Toowong, QLD, 4066
+**Residence:** Coorparoo, QLD, 4151
 
 **GitHub profile:** [michaelcastanares.github.io](https://michaelcastanares.github.io)
 
