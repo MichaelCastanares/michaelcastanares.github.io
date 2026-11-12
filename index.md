@@ -7,6 +7,14 @@ title: Portfolio
 
 ----
 
+["Tutor Demo: Forces on Damped Harmonic Oscillation"](/Entry_TutorDemo)
+
+*Updated: 12 November 2026*
+
+This is a two-minute demo video on Damped Harmonic Oscillation. In preparing this video, I realized the amount of work that goes into making a short video. It requires careful choice of words and a lot of trimming of ideas to fit the demo in a short clip. 
+
+
+
 ["AI in Education: Machine Learning-based Revised Bloom Taxonomy Classifiers"](/Entry_BloomTaxonomy)
 
 *Updated: 26 July 2026*
