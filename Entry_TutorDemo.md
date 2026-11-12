@@ -14,11 +14,27 @@ This is a two-minute demo video on Damped Harmonic Oscillation. In preparing thi
 Teaching is not an easy task. While AI tools help us to be efficient (just ask chat gpt), cultivating human intellect - by explaining a topic to students in your own words requires good effort. Cheers to all teachers for all their efforts in preparing their lecture materials for students. 
 
 
-<video width="1280" height="720" controls>
+<video width="640" height="360" controls>
   <source src="images/Castanares_Demo.mp4" type="video/mp4">
 </video>
 
+<button onclick="openFullscreen()">Play in Full Screen</button>
 
+<script>
+  function openFullscreen() {
+    const video = document.getElementById("demoVideo");
+    
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) { /* Safari */
+      video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) { /* IE11 */
+      video.msRequestFullscreen();
+    }
+    
+    video.play();
+  }
+</script>
 
 
 
